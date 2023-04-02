@@ -1,0 +1,78 @@
+.switch input {
+  display: none;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {.slider {
+  position: relative;
+  display: block;
+  width: 1.9em;
+  height: 1.8em;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: background-color 0.3s;
+}
+
+.slider:before,
+.slider:after {
+  position: absolute;
+  content: "";
+  font-size: 1.2em;
+  color: black;
+  top: 0.2em;
+  transition: transform 0.3s;
+}
+
+.slider:before {
+  content: "\1F4A1";
+  left: 0.25em;
+}
+
+
+                                           
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {.slider {
+  position: relative;
+  display: block;
+  width: 3.5em;
+  height: 1.8em;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: background-color 0.3s;
+}
+
+.slider:before,
+.slider:after {
+  position: absolute;
+  content: "";
+  font-size: 1.2em;
+  color: black;
+  top: 0.2em;
+  transition: transform 0.3s;
+}
+
+.slider:before {
+  content: "\263C";
+  left: 0.25em;
+}
+
+.slider:after {
+  content: "\1F31C";
+  right: 0.5em;
+  transform: scale(0);
+}
+
+input:checked + .slider:before {
+  transform: scale(0);
+}
+
+input:checked + .slider:after {
+  transform: scale(1);
+}
+
+.slider.round {
+  border-radius: 24px;
+}
+}
+
